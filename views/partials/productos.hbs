@@ -1,0 +1,17 @@
+<main class="container">
+<div class="container" style="align-item:center !important; text-align:center !important">
+<h1>MENU</h1>
+         {{#each listado}}
+         <div class="d-flex justify-content-center">
+         <div class="card" style="width: 18rem; padding-top: 10px !important; margin-bottom:10px !important;">
+            <label>Nombre:</label>
+            <h3 style="align-item:center !important; text-align:center !important">{{this.nombre}}</h3>
+            <label>Precio:</label>
+            <div class="card-body">
+                <p class="card-text" style="align-item:center !important; text-align:center !important">${{this.precio}}</p>
+            </div>
+        </div>
+        </div>
+        {{/each}}
+</div>
+</main>
