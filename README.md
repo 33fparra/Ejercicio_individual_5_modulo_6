@@ -1,6 +1,6 @@
 <img src="public/images/perfil.png" align="right" />
 
-# Trabajo Grupal 4 Modulo 6 [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/33fparra/Ejercicio_individual_5_modulo_6)
+# Trabajo Individual 5 Modulo 6 [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/33fparra/Ejercicio_individual_5_modulo_6)
 
 > Nuestro Trabajo
 
