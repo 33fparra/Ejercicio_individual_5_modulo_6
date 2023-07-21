@@ -19,10 +19,21 @@ app.get("/", (req, res)=>{
     res.render("index");
 });
 
+app.post("/plato", (req, res)=>{
+    const plato = agregarPlato(plato);
+    res.render("plato");
+});
+
 app.get("/almuerzos", (req, res) => {
     const menu = mostrarMenu();
     res.render("almuerzos", { listado: menu.almuerzos }); // Pasar la lista de almuerzos al template
 });
+
+app.delete("/eliminarPlato", (req, res) => {
+    const borrar = borrarPlato(nombre);
+    res.render("eliminarPlato"); // Pasar la lista de almuerzos al template
+});
+
 // Función para leer y mostrar el menú
 export function mostrarMenu() {
     const data = fs.readFileSync('menu.json', 'utf8');
