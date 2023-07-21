@@ -1,11 +1,10 @@
-<img src="perfil.png" align="right" />
+<img src="public/images/perfil.png" align="right" />
 
-# Trabajo Grupal 4 Modulo 6 [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/33fparra/Servidor_web_contenidos_NodeJS)
+# Trabajo Grupal 4 Modulo 6 [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/33fparra/Ejercicio_individual_5_modulo_6)
 
 > Nuestro Trabajo
 
-
-https://github.com/33fparra/Servidor_web_contenidos_NodeJS
+https://github.com/33fparra/Ejercicio_individual_5_modulo_6
 
 Contents
 ========
@@ -17,11 +16,33 @@ Contents
  
 ## Descripción del Proyecto :memo:
 
-📝 Implementar un servidor web de contenidos estáticos y dinámicos utilizando motores de plantillas acorde al entorno Node Express para dar solución a un problema.
+📝 Implementar la persistencia de objetos en una aplicación web utilizando archivos de texto plano para resolver un problema acorde al entorno Node.js
 
-La empresa Black and White Spa está promocionando una campaña para las redes sociales en donde quieren ofrecer un sitio web que permita escribir la URL de una imagen de internet y que ésta sea
-procesada por el servidor para ser devuelta en blanco y negro. Deberás crear un servidor que disponibiliza una ruta raíz que devuelva un HTML con el formulario para
-ingresar la URL de la imagen con estilos CSS de un documento interno en los archivos del servidor. El formulario debe redirigir a otra ruta del servidor que procese la imagen y la devuelva en blanco y negro.
+Un restaurante tiene su menú guardado en un archivo json, y quiere que crees funciones para mostrar por consola el
+menu, además de agregar nuevos platos, y quitarlos cuando quieran hacerlo, este es el archivo json inicial:
+````sh
+{
+"almuerzos": [
+   {
+      "nombre": "cazuela",
+      "precio": 5990
+   },
+   {
+      "nombre": "carbonada",
+      "precio": 4990
+   },
+   {
+      "nombre": "arroz",
+      "precio": 3000
+   }
+]}
+````
+
+Creamos tres funciones:
+1. - una que consulte el archivo json, y lo muestre en consola.
+2. - una que al entregarle como parámetro un objeto, lo agregue al archivo json
+3. - una que al entregarle un string con el nombre de un plato lo borre del archivo
+
 
 ## Instrucciones de Instalación :computer:
 
@@ -68,23 +89,9 @@ ingresar la URL de la imagen con estilos CSS de un documento interno en los arch
     "dependencies": {
     "express": "^4.18.2",
     + "hbs": "^4.2.0",
-    + "jimp": "^0.22.8",
-    "nodemon": "^3.0.1",
-    + "yargs": "^17.7.2"
     }
     ````
 
-4. Ejecutar el comando 'help':
-
-   ```sh
-   node server.js --help
-   ```
-
-5. Ejecutar el comando 'key', para que inicie el servidor, recuerda que la `key` correcta es `123`:
-
-   ```sh
-   node server.js --key 123
-   ```   
 </details>
 
 </details>
@@ -93,11 +100,11 @@ ingresar la URL de la imagen con estilos CSS de un documento interno en los arch
 
 ✨ Con nuestra aplicacion puedes:
 
-1. Funcionalidad : Cambiar imagen a escala de grises
-2. Funcionalidad : Redimensionar la imagen a 350px
-3. Funcionalidad : Cambiar la calidad de la Imagen al 60%
+1. Funcionalidad : funcion que consulte el archivo json, y lo muestre en consola
+2. Funcionalidad : funcion que al entregar como parámetro un objeto, lo agregue al archivo .json
+3. Funcionalidad : funcion que al entregar un string con el nombre de un plato lo borre del archivo
 
-![Foto de grupo](/grupoVerde.jpg)
+![Foto de grupo](public/images/grupoVerde.jpg)
 
 ## Participantes del Grupo :busts_in_silhouette:
 
@@ -116,7 +123,7 @@ ingresar la URL de la imagen con estilos CSS de un documento interno en los arch
 ### Este proyecto está bajo la licencia MIT. Para más información, consulta el archivo LICENSE.
 
 
-<img src="logGrupoVerde.png" align="right" />
+<img src="public/images/logGrupoVerde.png" align="right" />
 
-## Grupo Verde (https://github.com/33fparra/Renderizado_hbs_tareasPendientes_m6_g4)
+## Grupo Verde (https://github.com/33fparra/Ejercicio_individual_5_modulo_6)
 

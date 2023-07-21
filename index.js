@@ -27,7 +27,7 @@ app.get("/almuerzos", (req, res) => {
 export function mostrarMenu() {
     const data = fs.readFileSync('menu.json', 'utf8');
     const menu = JSON.parse(data);
-    // console.log(menu);
+    console.log(menu);
     return menu;
   }
   
