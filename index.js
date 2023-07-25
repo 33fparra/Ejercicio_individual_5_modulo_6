@@ -58,7 +58,7 @@ export function mostrarMenu() {
     fs.writeFileSync('menu.json', JSON.stringify(menu, null, 2));
   }
 
-// Ejemplos de uso de las funciones
+// Si quisiera usar las funciones directamente
 //mostrarMenu(); // Mostrará el menú actual
 //agregarPlato({ nombre: 'churrasco', precio: 6990 }); // Agregará un nuevo plato al menú
 //eliminarPlato('arroz'); // Eliminará el plato 'arroz' del menú
