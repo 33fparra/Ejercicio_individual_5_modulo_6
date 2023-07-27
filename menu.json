@@ -1,16 +1,24 @@
 {
-    "almuerzos": [
+  "almuerzos": [
     {
-    "nombre": "cazuela",
-    "precio": 5990
+      "nombre": "cazuela",
+      "precio": 5990
     },
     {
-    "nombre": "carbonada",
-    "precio": 4990
+      "nombre": "carbonada",
+      "precio": 4990
     },
     {
-    "nombre": "arroz",
-    "precio": 3000
+      "nombre": "arroz",
+      "precio": 3000
+    },
+    {
+      "nombre": "tallarines",
+      "precio": 2990
+    },
+    {
+      "nombre": "asado",
+      "precio": 12990
     }
-    ]
+  ]
 }

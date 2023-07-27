@@ -1,5 +1,6 @@
 import express from "express";
 import fs from "fs";
+import bodyParser from "body-parser";
 import hbs from "hbs";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
@@ -11,6 +12,9 @@ app.listen(3000, () => {
     console.log('Servidor iniciado en el puerto http://localhost:3000');
 });
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.set("view engine", "hbs");
 app.use(express.static("public"));
 hbs.registerPartials(__dirname + "/views/partials")
@@ -20,7 +24,8 @@ app.get("/", (req, res)=>{
 });
 
 app.post("/plato", (req, res)=>{
-    const plato = agregarPlato(plato);
+    const nuevoPlato = req.body;
+    agregarPlato(nuevoPlato);
     res.render("plato");
 });
 
@@ -29,8 +34,9 @@ app.get("/almuerzos", (req, res) => {
     res.render("almuerzos", { listado: menu.almuerzos }); // Pasar la lista de almuerzos al template
 });
 
-app.delete("/eliminarPlato", (req, res) => {
-    const borrar = borrarPlato(nombre);
+app.delete("/eliminarPlato/:nombre", (req, res) => {
+    const nombrePlato = req.params.nombre;
+    const borrar = borrarPlato(nombrePlato);
     res.render("eliminarPlato"); // Pasar la lista de almuerzos al template
 });
 
